@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://cdn.tailwindcss.com"></script>
+    <title>Image Gallery</title>
+</head>
+<body>
+    <!-------------------GLOBAL CONTAINER --------------------->
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+        <!-------------------CARD CONTAINER --------------------->
+        <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:-40">
+<!-------------------MENU CONTAINER --------------------->
+<div class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 md:justify-end">
+    <!-------------------MENU ITEMS --------------------->
+    <div class="group">
+       <a href="#">VECTOR</a>
+       <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+       </div> 
+    </div>
+
+    <div class="group">
+        <a href="#">ILLUSTRATIONS</a>
+        <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+        </div> 
+     </div>
+
+     <div class="group">
+        <a href="#">IMAGES</a>
+        <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+        </div> 
+     </div>
+
+     <div class="group">
+        <a href="#">ICONS</a>
+        <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100">
+        </div> 
+     </div>
+</div>
+ <!-------------------SEARCH CONTAINER --------------------->
+    <div class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0">
+         <!-------------------INPUT AND SVG CONTAINER --------------------->
+            <div class="flex justify-between border-b">
+                <input class="input ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none" 
+                placeholder="Search">  
+                </input>
+                <button>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 text-red-300 duration-200 hover:scale-110"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                  </svg>
+                </button>
+            </div>
+ <!-------------------UPLOAD BUTTON --------------------->
+<button class="py-3 px-14 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black">Upload
+</button>
+    </div>
+     <!-------------------GALLERY CONTAINER--------------------->
+     <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+         <!-------------------IMAGE 1 --------------------->
+<div class="relative group">
+    <img src="image/image1.jpg" alt="" class="w-72 h-52 transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">ABSTRACT PAINTING</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+
+        </div>
+    </div>
+</div>
+  <!-------------------IMAGE 2 --------------------->
+<div class="relative group">
+    <img src="image/image2.jpg" alt="" class="w-72 h-52 transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">HAUNTED HOUSES</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+
+        </div>
+    </div>
+</div>
+  <!-------------------IMAGE 3 --------------------->
+<div class="relative group">
+    <img src="image/image3.jpg" alt="" class="w-72 h-52 transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">SHAPE CUTTING</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+
+        </div>
+    </div>
+</div>
+  <!-------------------IMAGE 4 --------------------->
+<div class="relative group">
+    <img src="image/image4.jpg" alt="" class="w-72 h-52 transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">NICHE ART</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+
+        </div>
+    </div>
+</div>
+  <!-------------------IMAGE 5 --------------------->
+<div class="relative group">
+    <img src="image/image5.jpg" alt="" class="w-72 h-52 transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">BUILDING STRUCTURES</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+
+        </div>
+    </div>
+</div>
+  <!-------------------IMAGE 6 --------------------->
+<div class="relative group">
+    <img src="image/image6.jpg" alt="" class="w-72 h-52 transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">WALL PAINTING</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-------------------IMAGE 7 --------------------->
+<div class="relative group">
+    <img src="image/image7.jpg" alt="" class="w-72 h-52 transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">CHINA TRAVEL</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-------------------IMAGE 8 --------------------->
+<div class="relative group">
+    <img src="image/image8.jpg" alt="" class="w-72 h-52 transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">MEXICO CITY</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-------------------IMAGE 9 --------------------->
+<div class="relative group">
+    <img src="image/image9.jpg" alt="" class="w-72 h-52 object-cover transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">SALVADOR TRAVEL</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------IMAGE 10 --------------------->
+<div class="relative group">
+    <img src="image/image10.jpg" alt="" class="w-72 h-52 object-cover transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">LOST CITY TRAVEL</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------IMAGE 11 --------------------->
+<div class="relative group">
+    <img src="image/image11.jpg" alt="" class="w-72 h-52 object-cover transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">OCEAN DIVING</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+             <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+<img src="image/bookmark.svg" alt="bookmark">
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------IMAGE 12 --------------------->
+<div class="relative group" >
+    <img src="image/image12.jpg" alt="" class="w-72 h-52 object-cover transition-transform duration-300 transform hover:scale-105">
+    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+        <div class="flex justify-between w-full">
+            <div class="font-normal">
+                <p class="text-sm">SPACE TRAVEL</p>
+                <p class="text-xs">245 LIKES-35 SHARES</p>
+            </div>
+            <!------------------- BOOKMARK --------------------->
+            <div class="flex items-center">
+                <img src="image/bookmark.svg" alt="bookmark">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     </div>
+
+        </div>
+    </div>
+</body>
+</html>
